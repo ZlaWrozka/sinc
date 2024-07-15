@@ -1,0 +1,18 @@
+:host {
+    flex: 1;
+}
+
+.login {
+
+    padding: 20px;
+    
+    .login-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-form > * {
+        margin-bottom: 16px;
+        width: 160px;
+    }
+}

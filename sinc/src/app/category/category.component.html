@@ -1,0 +1,12 @@
+<div class="category">
+    <mat-form-field class="category-select">
+        <mat-label>Select a category</mat-label>
+        <mat-select (valueChange)="onCategorySelected($event)" [formControl]="selectedCategoryControl">
+            @for(category of categories(); track category; let i = $index){
+
+            <mat-option [value]="category">{{category}}</mat-option>
+
+            }
+        </mat-select>
+    </mat-form-field>
+</div>

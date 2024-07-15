@@ -1,0 +1,13 @@
+.nav {
+
+    mat-nav-list {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid black;
+
+        a {
+            width: 160px;
+            text-align: center;
+        }
+    }
+}

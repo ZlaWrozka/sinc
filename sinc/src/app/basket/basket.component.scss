@@ -1,0 +1,27 @@
+.basket {
+    border-left: 1px solid black;
+    height: calc(100vh - 65px - 40px); // it would be better to write a js query to dynamically calculate it
+    padding: 40px;
+
+    ul {
+        list-style-type: square;
+    }
+
+    li {
+        display: flex;
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    .wide {
+        flex: 1;
+        margin-right: 8px;
+    }
+
+    .narrow {
+        width: 70px;
+    }
+}
+

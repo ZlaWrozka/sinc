@@ -1,0 +1,12 @@
+.app-wrapper {
+
+    .main {
+        display: flex;
+
+        app-basket {
+            min-width: 400px;
+            width: 500px;
+        }
+    }
+
+}

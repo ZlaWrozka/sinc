@@ -1,0 +1,13 @@
+<section class="login">
+    <form class="login-form">
+        <mat-form-field>
+            <mat-label>Enter your username</mat-label>
+            <input matInput placeholder="Username" [formControl]="usernameControl" />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Enter your password</mat-label>
+            <input matInput type="password" [formControl]="passwordControl" />
+        </mat-form-field>
+    </form>
+    <button mat-flat-button click="logIn()"></button>
+</section>

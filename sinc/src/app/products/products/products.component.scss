@@ -1,0 +1,31 @@
+:host {
+    flex: 1;
+}
+
+.products {
+
+    // lobotomized owl ;)
+    .products-list>*+* {
+        margin-block-start: 16px;
+    }
+
+    .product {
+        display: flex;
+    }
+
+    .product__description {
+        margin-right: auto;
+        min-width: 600px;
+    }
+
+    .product__actions {
+        display: flex;
+        flex-shrink: 0;
+    }
+
+    .product__actions>*+* {
+        margin-left: 16px;
+    }
+
+
+}

@@ -1,0 +1,28 @@
+<section class="basket">
+    @if (selectedProducts$$().length > 0) {
+        <p>Basket Content:</p>
+
+        <ul class="products">
+            <li class="product">
+                <span class="product__name wide"><strong>Name</strong></span>  
+                <span class="product__count narrow"><strong>Count</strong></span>  
+                <span class="product__price narrow"><strong>Price</strong></span>  
+            </li>
+
+            @for (product of selectedProducts$$(); track product.id) {
+
+                <li class="product">
+                    <span class="product__name wide">{{product.title}}</span>  
+                    <span class="product__count narrow">{{product.count}}</span>  
+                    <span class="product__price narrow">{{product.price}}</span>  
+                </li>
+            }
+        </ul>
+        <p>Total Price: <strong>{{totalPrice$$()}}</strong></p>
+    } 
+    @else {
+        <p class="no-content-info">Basket is currently empty</p>
+    }
+
+
+</section>

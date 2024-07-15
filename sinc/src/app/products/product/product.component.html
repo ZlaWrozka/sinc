@@ -1,0 +1,22 @@
+@if (product$ | async; as product) {
+
+<section class="product">
+
+    <div class="product__details">
+
+        <img [src]="product.image" alt="Image for {{product.title}}">
+
+        <div class="details">
+            <h5>{{product.title}}</h5>
+            <p>{{product.description}}</p>
+            <p>Price: <strong>{{product.price}}</strong></p>
+            <button mat-flat-button color="primary" title="Add to Basket" (click)="addToBasket(product)">Add</button>
+
+        </div>
+    </div>
+    <div class="product__actions">
+        <a title="Back to List" routerLink="/products" routerLinkActive="active" ariaCurrentWhenActive="page">Back
+            to Products List</a>
+    </div>
+</section>
+}
